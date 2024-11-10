@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DetailView.swift
 //  UltimatePortfolio
 //
 //  Created by Steven Hawk on 11/9/24.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
     var body: some View {
-        Text("Content")
+        Text("Detail")
     }
 }
 
 #Preview {
-    ContentView()
+    DetailView()
 }
