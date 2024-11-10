@@ -23,12 +23,11 @@ class DataController: ObservableObject {
         
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
-            
-            container.loadPersistentStores { storeDescription, error in
-                if let error {
-                    fatalError("Fatal error loading store: \(error.localizedDescription)")
-                }
-                
+        }
+        
+        container.loadPersistentStores { storeDescription, error in
+            if let error {
+                fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
         }
     }
